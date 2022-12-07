@@ -1,0 +1,88 @@
+body {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ECECEC;
+}
+
+h1 {
+    letter-spacing: 5px;
+    border: 5px solid #5463ff;
+    padding: 10px;
+}
+
+.score {
+    display: flex;
+    font-size: 2em;
+}
+
+.player {
+    float: left;
+    background-color: #FFC300;
+    padding: 25px;
+}
+
+.comp {
+    float: right;
+    background-color: #FF1818;
+    padding: 25px;
+    margin-left: 3vw;
+}
+
+.player , .comp {
+    border-radius: 15%;
+}
+
+.options {
+    display: flex;
+}
+.options button {
+    background-color: #5463FF;
+    color: #ECECEC;
+    font-size: 3rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.options button:hover {
+    background-color: #ECECEC;
+    color: #5463FF;
+    border: 1px solid #5463FF;
+
+}
+
+.choises {
+    display: flex;
+    
+}
+
+.player-choises {
+    background-color: #FFC300;
+    padding: 25px;
+    margin-right: 3vw;
+}
+
+.comp-choises {
+    background-color: #FF1818;
+    padding: 25px;
+}
+
+.player-choises , .comp-choises {
+    border-radius: 10%;
+}
+
+.reset {
+    background-color: #5463FF;
+    color: #ECECEC;
+    padding: 25px;
+    border-radius: 50%;
+    margin-top: 2vh;
+    cursor: grab;
+}
+
+.reset:hover {
+    background-color: #ECECEC;
+    color: #5463FF;
+    border: 2px solid #5463FF;
+}
