@@ -32,7 +32,32 @@
     </div>
     <p class="result">You won !</p>
     <button class="reset">Reset Game</button>
-    <button class="rules-button" onclick="showRules()"><i class="fa-solid fa-question"></i></button>
+
+    <!--  Rules model taking from https://www.w3schools.com/howto/howto_css_modals.asp  -->
+<button id="rules-button"><i class="fa-solid fa-question"></i></button>
+
+<div id="ruleModel" >
+
+  <div class="rule-content">
+    <span class="rules-close">&times;</span>
+        <h2>Game Rules:</h2>
+    <ul>
+        <li>Scissors decapitate Scissors cuts paper,</li>
+        <li>Paper covers rock,</li>
+        <li>Rock crushes lizard,</li>
+        <li>Lizard poisons Spock,</li>
+        <li>Spock smashes scissors,</li>
+        <li>Scissors decapitates lizard,</li>
+        <li>Lizard eats paper,</li>
+        <li>Paper disproves Spock,</li>
+        <li>Spock vaporizes rock,</li>
+        <li>Rock crushes scissors</li>
+    </ul>
+  </div>
+
+
+
+</div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
