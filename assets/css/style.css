@@ -86,3 +86,81 @@ h1 {
     color: #5463FF;
     border: 2px solid #5463FF;
 }
+
+#rules-button {
+    height: 5vh;
+    width: 5vw;
+    border: 2px solid #131314;
+    background-color: #5463ff;
+    color: #ECECEC;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: 0 3% 5% 0;
+    font-size: 2.5rem;
+}
+
+#rules-button:hover {
+    background-color: #ECECEC;
+    color: #5463FF;
+    border: 2px solid #5463FF;
+}
+
+#ruleModel {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+#ruleModel {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .rule-content {
+    background-color: #ECECEC;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid #5463FF;
+    width: 90%;
+    text-align: center; 
+  }
+  
+  .rule-content h2 {
+    font-size: 3rem;
+  }
+  .rule-content ul {
+    list-style: none;
+    font-size: xx-large;
+  }
+
+
+  .rules-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .rules-close:hover,
+  .rules-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
