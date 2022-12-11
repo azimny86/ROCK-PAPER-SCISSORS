@@ -1,4 +1,18 @@
 /**
+ * Variables taken from the index page
+ */
+const playerScoreSpan = document.querySelector(".player-score");
+const compScoreSpan = document.querySelector(".comp-score");
+const optionsButtons = document.querySelectorAll(".choises");
+const choicesSection = document.querySelector(".choices");
+const playerChoiceSpan = document.querySelector(".player-choice");
+const compChoiceSpan = document.querySelector(".comp-choice");
+const resultText = document.querySelector(".result");
+const resetGameButton = document.querySelector(".reset");
+
+
+
+/**
  * Function opening alert window the rules of game
  * Rules model taking from https://www.w3schools.com/howto/howto_css_modals.asp
 */
