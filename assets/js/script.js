@@ -11,6 +11,21 @@ const resultText = document.querySelector(".result");
 const resetGameButton = document.querySelector(".reset");
 
 
+let playerScore = 0;
+let playerChoice = "";
+let compScore = 0;
+let compChoice = "";
+
+/**
+ * Function prepare game for start
+ */
+function prepareGame() {
+  playerScoreSpan.innerHTML = playerScore;
+  compScoreSpan.innerHTML = compScore;
+  resultText.innerHTML = "Choose from the options to start game !";
+}
+
+window.onload =prepareGame();
 
 /**
  * Function opening alert window the rules of game
