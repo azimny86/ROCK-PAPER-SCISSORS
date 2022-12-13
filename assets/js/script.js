@@ -35,7 +35,7 @@ function playerSelection(event) {
   playerChoice = event.target.dataset.options;
   event.target.classList.add("active");
   resetGameButton.classList.add("active");
-  
+  choicesSection.classList.add("active")
   compSelection()
 }
 /**
@@ -91,7 +91,12 @@ compChoiceSpan.innerHTML = compChoice;
 resultText.innerHTML = winner;
 }
 
+function reset() {
+  choicesSection.classList.remove("active")
+}
+
 optionsButtons.forEach((button) => button.addEventListener('click', playerSelection))
+
 
 
 

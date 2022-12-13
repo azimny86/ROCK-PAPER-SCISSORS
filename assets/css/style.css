@@ -53,10 +53,13 @@ h1 {
 
 
 .choises {
-    display: flex;
+    display: none;
     
 }
 
+.choises.active {
+    display: flex;
+}
 .player-choises {
     background-color: #FFC300;
     padding: 25px;
