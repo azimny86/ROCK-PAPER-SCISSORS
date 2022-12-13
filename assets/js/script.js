@@ -75,11 +75,15 @@ function checkWinner() {
 {
 winner = "Player Win !";
 playerScore++;
+playerScoreSpan.innerHTML = playerScore;
+
 }else if (playerChoice === compChoice) {
   winner = 'Draw!'
 }else {
   winner = 'Sorry , but this time you LOST!'
   compScore++;
+  compScoreSpan == compScore;
+  compScoreSpan.innerHTML = compScore;
 }
 }
 
