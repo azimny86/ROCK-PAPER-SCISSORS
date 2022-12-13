@@ -28,13 +28,20 @@ function prepareGame() {
 window.onload = prepareGame();
 
 /**
- * Function add active class CSS and store player choice in variable
+ * Function add active class CSS and store player choice in variable and activating the selection by comp
  */
 function playerSelection(event) {
   optionsButtons.forEach((button) => button.classList.remove("active"));
   playerChoice = event.target.dataset.options;
   event.target.classList.add("active");
+
+  compSelection()
 }
+/**
+ * Variable to keep options available for Comp
+ */
+const CompAvailableSelection = ['ROCK','PAPER','SCISSORS','LIZARD','SPOCK']
+
 
 
 optionsButtons.forEach(button => button.addEventListener('click', playerSelection))
