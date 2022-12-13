@@ -42,7 +42,15 @@ function playerSelection(event) {
  */
 const CompAvailableSelection = ['ROCK','PAPER','SCISSORS','LIZARD','SPOCK']
 
+/**
+ * Selection of a random option for comp in the game
+ */
 
+function compSelection() {
+  const random = Math.floor(Math.random()* CompAvailableSelection.length)
+  compChoice = CompAvailableSelection[random];
+
+}
 
 optionsButtons.forEach(button => button.addEventListener('click', playerSelection))
 
