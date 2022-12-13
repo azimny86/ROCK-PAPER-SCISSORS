@@ -51,6 +51,11 @@ h1 {
     border: 1px solid #5463FF;
 }
 
+.options button.active {
+    background-color: #FFC300;
+    color: #5463FF;
+    border: 1px solid #5463FF;
+}
 
 .choises {
     display: none;
