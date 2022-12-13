@@ -34,7 +34,8 @@ function playerSelection(event) {
   optionsButtons.forEach((button) => button.classList.remove("active"));
   playerChoice = event.target.dataset.options;
   event.target.classList.add("active");
-
+  resetGameButton.classList.add("active");
+  
   compSelection()
 }
 /**
@@ -90,7 +91,9 @@ compChoiceSpan.innerHTML = compChoice;
 resultText.innerHTML = winner;
 }
 
-optionsButtons.forEach(button => button.addEventListener('click', playerSelection))
+optionsButtons.forEach((button) => button.addEventListener('click', playerSelection))
+
+
 
 /**
  * Function opening alert window the rules of game

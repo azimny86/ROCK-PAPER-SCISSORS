@@ -49,8 +49,8 @@ h1 {
     background-color: #ECECEC;
     color: #5463FF;
     border: 1px solid #5463FF;
-
 }
+
 
 .choises {
     display: flex;
@@ -79,6 +79,10 @@ h1 {
     border-radius: 50%;
     margin-top: 2vh;
     cursor: grab;
+    display: none;
+}
+.reset.active {
+    display: block;
 }
 
 .reset:hover {
