@@ -3,8 +3,8 @@
  */
 const playerScoreSpan = document.querySelector(".player-score");
 const compScoreSpan = document.querySelector(".comp-score");
-const optionsButtons = document.querySelectorAll(".choises");
-const choicesSection = document.querySelector(".choices");
+const optionsButtons = document.querySelectorAll(".options");
+const choicesSection = document.querySelector(".choises");
 const playerChoiceSpan = document.querySelector(".player-choice");
 const compChoiceSpan = document.querySelector(".comp-choice");
 const resultText = document.querySelector(".result");
@@ -25,7 +25,19 @@ function prepareGame() {
   resultText.innerHTML = "Choose from the options to start game !";
 }
 
-window.onload =prepareGame();
+window.onload = prepareGame();
+
+/**
+ * Function add active class CSS and store player choice in variable
+ */
+function playerSelection(event) {
+  optionsButtons.forEach((button) => button.classList.remove("active"));
+  playerChoice = event.target.dataset.options;
+  event.target.classList.add("active");
+}
+
+
+optionsButtons.forEach(button => button.addEventListener('click', playerSelection))
 
 /**
  * Function opening alert window the rules of game
