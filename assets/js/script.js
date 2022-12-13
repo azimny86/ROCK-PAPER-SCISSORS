@@ -85,6 +85,8 @@ playerScoreSpan.innerHTML = playerScore;
   compScoreSpan == compScore;
   compScoreSpan.innerHTML = compScore;
 }
+playerChoiceSpan.innerHTML = playerChoice;
+compChoiceSpan.innerHTML = compChoice;
 }
 
 optionsButtons.forEach(button => button.addEventListener('click', playerSelection))
