@@ -49,7 +49,36 @@ const CompAvailableSelection = ['ROCK','PAPER','SCISSORS','LIZARD','SPOCK']
 function compSelection() {
   const random = Math.floor(Math.random()* CompAvailableSelection.length)
   compChoice = CompAvailableSelection[random];
+  checkWinner()
+}
 
+/**
+ * Function declares a win, loss or draw
+ */
+function checkWinner() {
+  let winner = '';
+/**
+ * Game rules
+ */
+  if(
+    (playerChoice === 'SCISSORS'  && compChoice === 'PAPER') || 
+    (playerChoice === 'PAPER'  && compChoice ==='ROCK') || 
+    (playerChoice ==='ROCK' && compChoice ==='LIZARD') ||
+    (playerChoice ==='LIZARD' && compChoice ==='SPOCK') ||
+    (playerChoice ==='SPOCK' && compChoice ==='SCISSORS') ||
+    (playerChoice  === 'SCISSORS' && compChoice === 'LIZARD' ) ||
+    (playerChoice  === 'LIZARD' && compChoice === 'PAPER' ) ||
+    (playerChoice  === 'PAPER' && compChoice === 'SPOCK' ) ||
+    (playerChoice  === 'SPOCK' && compChoice === 'ROCK' ) ||
+    (playerChoice  === 'ROCK' && compChoice === 'SCISSORS' )
+  )
+{
+winner = "Player Win !";
+}else if (playerChoice === compChoice) {
+  winner = 'Draw!'
+}else {
+  winner = 'Sorry , but this time you LOST!'
+}
 }
 
 optionsButtons.forEach(button => button.addEventListener('click', playerSelection))
