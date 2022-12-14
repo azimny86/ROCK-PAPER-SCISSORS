@@ -23,6 +23,7 @@ function prepareGame() {
   playerScoreSpan.innerHTML = playerScore;
   compScoreSpan.innerHTML = compScore;
   resultText.innerHTML = "Choose from the options to start game !";
+  resetGameButton.classList.remove("active")
 }
 
 window.onload = prepareGame();
@@ -31,11 +32,11 @@ window.onload = prepareGame();
  * Function add active class CSS and store player choice in variable and activating the selection by comp
  */
 function playerSelection(event) {
-  optionsButtons.forEach((button) => button.classList.remove("active"));
+  optionsButtons.forEach((button) => button.classList.remove('active'));
   playerChoice = event.target.dataset.options;
   event.target.classList.add("active");
+  choicesSection.classList.add("active");
   resetGameButton.classList.add("active");
-  choicesSection.classList.add("active")
   compSelection()
 }
 /**
@@ -75,6 +76,7 @@ function checkWinner() {
   )
 {
 winner = "Player Win !";
+resultText.classList.add('player')
 playerScore++;
 playerScoreSpan.innerHTML = playerScore;
 
@@ -82,6 +84,7 @@ playerScoreSpan.innerHTML = playerScore;
   winner = 'Draw!'
 }else {
   winner = 'Sorry , but this time you LOST!'
+  resultText.classList.add('comp')
   compScore++;
   compScoreSpan == compScore;
   compScoreSpan.innerHTML = compScore;
@@ -91,11 +94,10 @@ compChoiceSpan.innerHTML = compChoice;
 resultText.innerHTML = winner;
 }
 
-function reset() {
-  choicesSection.classList.remove("active")
-}
 
-optionsButtons.forEach((button) => button.addEventListener('click', playerSelection))
+
+optionsButtons.forEach((button) => button.addEventListener("click", playerSelection))
+
 
 
 
