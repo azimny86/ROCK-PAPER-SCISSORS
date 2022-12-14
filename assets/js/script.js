@@ -1,5 +1,5 @@
 /**
- * Variables taken from the index page
+ * Variables from the index page
  */
 const playerScoreSpan = document.querySelector(".player-score");
 const compScoreSpan = document.querySelector(".comp-score");
@@ -94,11 +94,17 @@ compChoiceSpan.innerHTML = compChoice;
 resultText.innerHTML = winner;
 }
 
-
+function reset() {
+  choicesSection.classList.remove("active");
+  optionsButtons.forEach((button) => button.classList.remove('active'));
+  playerScore = 0;
+  compScore = 0;
+  prepareGame();
+}
 
 optionsButtons.forEach((button) => button.addEventListener("click", playerSelection))
 
-
+resetGameButton.addEventListener("click", reset)
 
 
 
