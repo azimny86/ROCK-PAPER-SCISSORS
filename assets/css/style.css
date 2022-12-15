@@ -43,6 +43,11 @@ h1 {
     font-size: 3rem;
     margin: 10px;
     cursor: pointer;
+    
+}
+
+.options button i {
+    pointer-events: none;
 }
 
 .options button:hover {
