@@ -47,7 +47,7 @@ h1 {
 }
 
 .options button i {
-    pointer-events: none;
+    pointer-events: none;/*  naprawia buga z przyciskoiem sicicors*/
 }
 
 .options button:hover {
@@ -83,6 +83,29 @@ h1 {
 
 .player-choises , .comp-choises {
     border-radius: 10%;
+}
+
+.result {
+    margin: 5% 0;
+    padding: 3% 16%;
+    border: 2px solid #5463ff;
+    font-size: 2rem;
+
+}
+
+.win {
+    background-color: #FFC300;
+    padding: 3%;
+    font-size: 2rem;
+}
+
+.lost{
+    background-color: #FF1818;
+    padding: 3%;
+    font-size: 2rem;
+}
+.draw {
+    background-color: #5463FF;
 }
 
 .reset {
