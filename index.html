@@ -10,11 +10,14 @@
     <title>ROCK | PAPER | SCISSORS | LIZARD | SPOCK</title>
 </head>
 <body>
+    <!-- Header -->
     <h1>ROCK | PAPER | SCISSORS | LIZARD | SPOCK</h1>
+    <!-- Score -->
     <div class="score">
         <p class="player">Player: <span class="player-score"></span></p>
         <p class="comp">Comp: <span class="comp-score"></span></p>
     </div>
+    <!-- Options -->
     <section class="options">
         <button data-options="ROCK" class="options"><i class="fa-regular fa-hand-back-fist"></i><br>ROCK</button>
         <button data-options="PAPER" class="options"><i class="fa-regular fa-hand"></i><br>PAPER</button>
@@ -22,6 +25,7 @@
         <button data-options="LIZARD" class="options"><i class="fa-regular fa-hand-lizard"></i><br>LIZARD</button>
         <button data-options="SPOCK" class="options"><i class="fa-regular fa-hand-spock"></i><br>SPOCK</button>
     </section>
+    <!-- Player and Comp Choises -->
     <div class="choises">
         <p class="player-choises">
             Player choice: <span class="player-choice"></span>
@@ -30,14 +34,15 @@
             Comp choice: <span class="comp-choice"></span>
         </p>
     </div>
+    <!-- Result of Game -->
     <p class="result"></p>
+    <!-- Restes Button -->
     <button class="reset">Reset Game</button>
 
     <!--  Rules model taking from https://www.w3schools.com/howto/howto_css_modals.asp  -->
 <button id="rules-button"><i class="fa-solid fa-question"></i></button>
-
+<!-- Rules of Game -->
 <div id="ruleModel" >
-
   <div class="rule-content">
     <span class="rules-close">&times;</span>
         <h2>Game Rules:</h2>
@@ -54,9 +59,6 @@
         <li>Rock crushes scissors</li>
     </ul>
   </div>
-
-
-
 </div>
     <script src="assets/js/script.js"></script>
 </body>
