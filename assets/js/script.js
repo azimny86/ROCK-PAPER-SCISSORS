@@ -76,20 +76,20 @@ function checkWinner() {
   )
 {
 winner = "Player Win !";
-resultText.classList.remove("lost")
-resultText.classList.add('win')
+resultText.classList.remove("lost");
+resultText.classList.add('win');
 
 playerScore++;
 playerScoreSpan.innerHTML = playerScore;
 
 }else if (playerChoice === compChoice) {
-  winner = 'Draw!'
-  resultText.classList.remove('win' , 'lost')
-  resultText.classList.add('result')
+  winner = 'Draw!';;
+  resultText.classList.remove('win' , 'lost');
+  resultText.classList.add('result');
 }else {
-  winner = 'Sorry , but this time you LOST!'
-  resultText.classList.remove( 'win')
-  resultText.classList.add('lost')
+  winner = 'Sorry , but this time you LOST!';
+  resultText.classList.remove( 'win');
+  resultText.classList.add('lost');
   compScore++;
   compScoreSpan == compScore;
   compScoreSpan.innerHTML = compScore;
@@ -112,9 +112,9 @@ function reset() {
   prepareGame();
 }
 
-optionsButtons.forEach((button) => button.addEventListener("click", playerSelection))
+optionsButtons.forEach((button) => button.addEventListener("click", playerSelection));
 
-resetGameButton.addEventListener("click", reset)
+resetGameButton.addEventListener("click", reset);
 
 
 
@@ -131,14 +131,14 @@ var span = document.getElementsByClassName("rules-close")[0];
 
 btn.onclick = function() {
   modal.style.display = "block";
-}
+};
 
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
