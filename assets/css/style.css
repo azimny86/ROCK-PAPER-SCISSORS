@@ -46,7 +46,7 @@ h1 {
 .options button {
     background-color: #5463FF;
     color: #ECECEC;
-    font-size: 3rem;
+    font-size: 2.9rem;
     margin: 10px;
     cursor: pointer;
     
@@ -218,3 +218,52 @@ h1 {
     text-decoration: none;
     cursor: pointer;
   }
+
+/* media queries */
+/* x-small devices */
+ @media (min-width: 320px) {
+    h1 {
+        font-size: 1rem;
+    }
+    .options button {
+        font-size: 0.4rem;
+    }
+ }
+ @media (min-width: 535px) {
+    h1 {
+        font-size: 1rem;
+    }
+    .options button {
+        font-size: 1rem;
+    }
+ }
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .options button {
+        font-size: 1.1rem;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .options button {
+        font-size: 1.5rem;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .options button {
+        font-size: 2rem;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .options button {
+        font-size: 2.9rem;
+    }
+  } 
+    
+  
