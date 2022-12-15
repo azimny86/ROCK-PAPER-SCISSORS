@@ -1,108 +1,189 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Responciv](./assets/Images/responsiv.png)
+# Rock Paper Scissors Lizard Spock
+## Welcome to rock, paper, scissors, liadar and spock Game
 
-Welcome azimny86,
+This game was created for the needs of 2 projects for the Code Institute.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Rock Paper Scissors Lizard Spock is a recreation of the game from the TV series "The Big Bang Theory".
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The game is very simple - the user chooses one of the Rock Paper Scissors Lizard Spock options, then the computer chooses one of the random options.
 
-## Gitpod Reminders
+## Rules of game :
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. Scissors cuts Paper  ✌ > ✋<br>
+2. Paper covers Rock    ✋ > ✊<br>
+3. Rock crushes Lizard  ✊ > 🦎<br>
+4. Lizard poisons Spock     🦎 > 🖖<br>
+5. Spock smashes Scissors   🖖 > ✌<br>
+6. Scissors decapitates Lizard  ✌ > 🦎<br>
+7. Lizard eats Paper    🦎 > ✋<br>
+8. Paper disproves Spock    ✋ > 🖖<br>
+9. Spock vaproizes Rock     🖖 > ✊<br>
+10. Rock crushes Scissors   ✊ > ✌
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+# Content
 
-Another blue button should appear to click: _Open Browser_.
+* [Introduction](# Rock Paper Scissors Lizard Spock)
+* [Sections and Pages](#sections-and-pages)
+    *  [Header](#header-and-navbar)
+    *  [Game Area](#game-area-section)
+    *  [Footer](#footer)
+* [User Experience](#user-experience)
+    *  [User Stories](#user-stories)
+* [Design](#design)
+    *  [Colour Palette](#colour-palette)
+    *  [Typography](#typography)
+    *  [Imagery](#imagery)
+    *  [Wireframes](#wireframes)
+    *  [Accessibility](#accessibility)
+* [Technologies Used](#technologies-used)   
+    *  [Languages Used](#languages-used)
+    *  [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+* [Testing](#testing)
+    * [Validator Testing](#validator-testing)
+    * [Responsiveness Testing](#responsiveness-testing)
+    * [Accessibility Testing](#accessibility-testing)
+    * [User Story Testing](#user-story-testing)
+* [Bugs](#Bugs)
+* [Deployment](#deployment)
+* [Credits](#credits)
+* [Acknowledgements](#acknowledgements)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Sections :
 
-A blue button should appear to click: _Make Public_,
+* ### Header
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+![Header](./assets/Images/Header.png)
+* The header contains the logo "Rock | Paper | Scissors | Lizard | Spock" in a simple easy-to-read font to announce the game to the user.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+* ### Game Area
+    We can divide this area into the following elements:
+    - Scoring : In this area user will have score displayed player will be displayed in color #FFC300 and computer score will be displayed in color #FF1818
+    ![Score](./assets/Images/score.png)
+    - Options: In this area, the player can select one of the given options by pressing the buttons to win the game , their appearance will be changed after hovering over them with the cursor and distinguish after pressing the button
+    ![Buttons](./assets/Images/buttons.png)
+    - Selection: In this area, the user will have their selection and computer selection displayed each off player is assigned a separate color
+    ![Choises](./assets/Images/choises.png)
+    - Result: This section user will be able to display 1 of 4 game options depending on the state of the game :
+    1. Start of Game 
+        ![Start](./assets/Images/result.png)
+    2. Win
+    ![Win](./assets/Images/result-win.png)
+    3. Lose 
+    ![Lose](./assets/Images/result-lose.png)
+    4. Draw
+    ![Draw](./assets/Images/result-draw.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    - Reset : Displayed only after starting the game, it is located at the bottom of the game, restarts the game from the beginning<br>
+    ![Reset](./assets/Images/reset.png)
+    - Rules : button on the right side of the screen displays the rules of the game when pressed 
+    ![Rules-button](./assets/Images/Rules-button.png)
+    ![Rules-button](./assets/Images/Rules.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# User Experience
+## User Stories 
 
-------
+### Users Goal
 
-## Release History
+- As User, I want to know how to start the game so I can enjoy playing.
+- As User, I want to be able to read the rules of the game easily so I understand what I have to do to play.
+- As a User, I want to be able to reset the game at any point so I can try again to win
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Goals
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- The game is to be accessible to all users with clear descriptions of the images where appropriate
+- I want the game to be easy to understand with clear instructions to avoid confusion
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- I want the game to be responsive so it can be played on multiple devices.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# Design
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Colour Palette
+- The color palette was chosen to provide a simple, easy-to-use game interface. The colors have been chosen to be distinct from each other and will not distract the player 
+![Color-Palett](./assets/Images/Color-Palette.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Font
+- The Roboto font is used throughout the site, making the site easy to read for all visitors.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Icons
+ - The icons have been chosen so that they can be easily and simply selected by the user
+# Technologies used
+- [GitHub](https://github.com)
+- [Gitpod](https://gitpod.io/workspaces)
+- [Coolers.co](https://coolors.co)
+- [Chrome Dev Tools](https://www.google.com/intl/en_ie/chrome/)
+- [Colorhunt](https://https://colorhunt.co/)
+- [Fontawesome](https://https://fontawesome.com/icons)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+# Testing
+The Game  was tested for HTML and CSS validation , responsive design and accessibility using multiple browsers including Chrome, EDGE, and Firefox. Please see screenshots of the results below:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* [W3C Markup Result](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-azimny86-rockpapersciss-smocz8cwomg.ws-eu79.gitpod.io%2F)
+* [W3C CSS Validator](./assets/Images/W3C-CSS.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Chrome
+- The Lighthouse report has been run several times for desktop and mobile to evaluate performance, accessibility, best practices, and SEO results.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    -Desktop
+    
+![test-desktop](./assets/Images/test-desktop.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+    -Mobile
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![test-mobile](./assets/Images/teest-mobile.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## User Story Testing
+1. I want the game to be simple with clear instructions to avoid user confusion.
+    - The game includes easy-to-understand instructions on how to start the game and how to earn points to win
+2. I want the game to be responsiveness
+    - The game has been tested on multiple devices for responsiveness. There was an issue on small mobile devices where the content of the buttons was not working, but it has been resolved and fixed. The game displays correctly on tested devices of various sizes.
 
-------
+## User Goals 
 
-## FAQ about the uptime script
+1. As a user, I want to know what a game is when I first visit the site so I can decide if I want to start a game.
 
-**Why have you added this script?**
+    - A clear title of the game at the top of the page what the game is about.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+2. As a User, I want to be able to easily read the rules of the game to understand what I need to do to win the game
 
-**How will this affect me?**
+    - The section with the rules of the game is always visible, thanks to which the user has the opportunity to read them before and during the game by pressing the icon
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+3. As a user, I want to be able to reset the game at any time so I can try to win again
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    - After starting the game, a restart button appears in the center of the screen, which is clearly visible and easily accessible to the user to restart the game at any time.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+4. As a user, I want to be able to exit the game whenever I have played enough
+    
+    - There are no blocks allowing the user to quit the game at any time.
 
-**So….?**
+# Deployment
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+The steps to deploy are as follows:
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* In the GitHub repository , navigate to the Settings tab
+* On the left hand side, locate the Pages section
+* From the source section drop-down menu, select the main branch and save
+* Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Live page [Live-Page](https://azimny86.github.io/ROCK-PAPER-SCISSORS/)
 
-**Anything more?**
+# Bugs
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Fixed Bugs
 
----
+ * The scissor button does not respond to pressing adding a pointer-event solved the problem
+ * Buttons with options did not deactivate at the end of the game, the reason for this was the lack of the "options" class in the buttons, after adding them the problem disappeared
 
-Happy coding!
+ ## Known Bugs 
+ - The position of the icon in the buttons
+
+ # Credits
+
+ ## Content
+  * The icons in buttons in page was taken from [Fontawesome](https://https://fontawesome.com/icons)
+  * Content of Game written by developer
