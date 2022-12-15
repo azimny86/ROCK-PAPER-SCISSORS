@@ -76,15 +76,20 @@ function checkWinner() {
   )
 {
 winner = "Player Win !";
-resultText.classList.add('player')
+resultText.classList.remove("lost")
+resultText.classList.add('win')
+
 playerScore++;
 playerScoreSpan.innerHTML = playerScore;
 
 }else if (playerChoice === compChoice) {
   winner = 'Draw!'
+  resultText.classList.remove('win' , 'lost')
+  resultText.classList.add('result')
 }else {
   winner = 'Sorry , but this time you LOST!'
-  resultText.classList.add('comp')
+  resultText.classList.remove( 'win')
+  resultText.classList.add('lost')
   compScore++;
   compScoreSpan == compScore;
   compScoreSpan.innerHTML = compScore;
@@ -93,10 +98,15 @@ playerChoiceSpan.innerHTML = playerChoice;
 compChoiceSpan.innerHTML = compChoice;
 resultText.innerHTML = winner;
 }
+ 
 
+/**
+ * Restarting Game 
+ */
 function reset() {
   choicesSection.classList.remove("active");
   optionsButtons.forEach((button) => button.classList.remove('active'));
+  resultText.classList.remove('comp',)
   playerScore = 0;
   compScore = 0;
   prepareGame();
